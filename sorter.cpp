@@ -29,8 +29,8 @@ void sorter::quicksortReal(std::vector<int>& dataset, int left, int right) {
 
             if (dataset[i] > dataset[pivot]) std::swap(dataset[j], dataset[i]);
             i++;
+            j--;
         }
-        j--;
     }
 
     quicksortReal(dataset, left, j);
