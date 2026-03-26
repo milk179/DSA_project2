@@ -7,11 +7,33 @@
 sorter::sorter(std::vector<int> dataset_) : dataset(dataset_) {}
 
 std::vector<int> sorter::quicksort() {
-    quicksortReal(dataset, 0, dataset.size() - 1);
-    return dataset;
+    auto start = std::chrono::high_resolution_clock::now();
+
+    std::vector<int> datasetCopy = dataset;
+
+    quicksortReal(datasetCopy, 0, static_cast<int>(datasetCopy.size()) - 1);
+
+    auto end = std::chrono::high_resolution_clock::now();
+
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+    return datasetCopy;
 }
 
-std::vector<int> sorter::mergesort() { return mergesortReal(dataset, 0, dataset.size() - 1); }
+std::vector<int> sorter::mergesort() {
+
+    auto start = std::chrono::high_resolution_clock::now();
+
+    std::vector<int> result = mergesortReal(dataset, 0, dataset.size() - 1);
+
+    auto end = std::chrono::high_resolution_clock::now();
+
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+    return result;
+}
+
+std::chrono::microseconds sorter::getMicros() { return microseconds; }
 
 void sorter::quicksortReal(std::vector<int>& dataset, int left, int right) {
 
@@ -24,13 +46,14 @@ void sorter::quicksortReal(std::vector<int>& dataset, int left, int right) {
     int i = left, j = right - 1;
 
     while (i <= j) {
+        while (!(dataset[j] <= dataset[pivot])) j--;
+        while (!(dataset[i] > dataset[pivot])) i++;
 
-        if (dataset[j] <= dataset[pivot]) {
+        if (i > j) break;
 
-            if (dataset[i] > dataset[pivot]) std::swap(dataset[j], dataset[i]);
-            i++;
-            j--;
-        }
+        std::swap(dataset[i], dataset[j]);
+        i++;
+        j--;
     }
 
     quicksortReal(dataset, left, j);
