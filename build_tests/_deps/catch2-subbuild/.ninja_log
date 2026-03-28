@@ -1,0 +1,21 @@
+# ninja log v6
+2	121	7964318579671544	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	44cac3d51c6fa2b1
+2	121	7964318579671544	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	44cac3d51c6fa2b1
+3	1994	7964318741383004	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	c2acd5db197dc645
+3	1994	7964318741383004	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	c2acd5db197dc645
+1994	2075	7964318742184607	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	646d84cc83c08baa
+1994	2075	7964318742184607	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	646d84cc83c08baa
+2075	2156	7964318742998161	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	ac5eb38b16a7a28c
+2075	2156	7964318742998161	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	ac5eb38b16a7a28c
+2156	2240	7964318743853334	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	f8a19e8114ae5684
+2156	2240	7964318743853334	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	f8a19e8114ae5684
+2241	2339	7964318744828503	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	941e6a8de8b2076b
+2241	2339	7964318744828503	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	941e6a8de8b2076b
+2339	2421	7964318745604569	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	ace881cb01149664
+2339	2421	7964318745604569	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	ace881cb01149664
+2421	2522	7964318746656128	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	4ecbe7bfa336bba2
+2421	2522	7964318746656128	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	4ecbe7bfa336bba2
+2522	2628	7964318747726131	CMakeFiles/catch2-populate-complete	47c970acb3e54d6
+2522	2628	7964318747726131	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	47c970acb3e54d6
+2522	2628	7964318747726131	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	47c970acb3e54d6
+2522	2628	7964318747726131	C:/Users/jonat/DSA_project2/build_tests/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	47c970acb3e54d6

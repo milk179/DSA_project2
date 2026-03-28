@@ -1,0 +1,8 @@
+# ninja log v6
+29	1090	7964299902441180	CMakeFiles/sort_comparator.dir/sorter.cpp.obj	3473e0bcb9b644e1
+39	2304	7964299902540712	CMakeFiles/sort_comparator.dir/comparator.cpp.obj	22f0aad27e7a3220
+51	1105	7964305974209102	CMakeFiles/sort_comparator.dir/main.cpp.obj	2ad8f6c6bdc8d424
+34	2832	7964299902495112	CMakeFiles/sort_comparator.dir/dataloader.cpp.obj	be60c8bf99e75d9e
+1106	1260	7964305984750745	sort_comparator.exe	82618b2649fab703
+35	765	7964306746797367	CMakeFiles/sort_comparator.dir/main.cpp.obj	2ad8f6c6bdc8d424
+765	876	7964306754095427	sort_comparator.exe	82618b2649fab703

@@ -1,0 +1,7 @@
+add_test( [==[Sorters handle edge cases]==] C:/Users/jonat/DSA_project2/build_tests/sort_comparator_tests.exe [==[Sorters handle edge cases]==]  )
+set_tests_properties( [==[Sorters handle edge cases]==] PROPERTIES WORKING_DIRECTORY C:/Users/jonat/DSA_project2/build_tests SKIP_RETURN_CODE 4)
+add_test( [==[Comparator reports metadata and correctness]==] C:/Users/jonat/DSA_project2/build_tests/sort_comparator_tests.exe [==[Comparator reports metadata and correctness]==]  )
+set_tests_properties( [==[Comparator reports metadata and correctness]==] PROPERTIES WORKING_DIRECTORY C:/Users/jonat/DSA_project2/build_tests SKIP_RETURN_CODE 4)
+add_test( [==[DataLoader helpers behave as expected]==] C:/Users/jonat/DSA_project2/build_tests/sort_comparator_tests.exe [==[DataLoader helpers behave as expected]==]  )
+set_tests_properties( [==[DataLoader helpers behave as expected]==] PROPERTIES WORKING_DIRECTORY C:/Users/jonat/DSA_project2/build_tests SKIP_RETURN_CODE 4)
+set( sort_comparator_tests_TESTS [==[Sorters handle edge cases]==] [==[Comparator reports metadata and correctness]==] [==[DataLoader helpers behave as expected]==])

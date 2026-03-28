@@ -1,0 +1,63 @@
+Start testing: Mar 28 16:26 Eastern Daylight Time
+----------------------------------------------------------
+1/3 Testing: Sorters handle edge cases
+1/3 Test: Sorters handle edge cases
+Command: "C:/Users/jonat/DSA_project2/build_tests/sort_comparator_tests.exe" "Sorters handle edge cases"
+Directory: C:/Users/jonat/DSA_project2/build_tests
+"Sorters handle edge cases" start time: Mar 28 16:26 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Filters: "Sorters handle edge cases"
+Randomness seeded to: 3557147024
+===============================================================================
+All tests passed (16 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Sorters handle edge cases" end time: Mar 28 16:26 Eastern Daylight Time
+"Sorters handle edge cases" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: Comparator reports metadata and correctness
+2/3 Test: Comparator reports metadata and correctness
+Command: "C:/Users/jonat/DSA_project2/build_tests/sort_comparator_tests.exe" "Comparator reports metadata and correctness"
+Directory: C:/Users/jonat/DSA_project2/build_tests
+"Comparator reports metadata and correctness" start time: Mar 28 16:26 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Filters: "Comparator reports metadata and correctness"
+Randomness seeded to: 3811020588
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Comparator reports metadata and correctness" end time: Mar 28 16:26 Eastern Daylight Time
+"Comparator reports metadata and correctness" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: DataLoader helpers behave as expected
+3/3 Test: DataLoader helpers behave as expected
+Command: "C:/Users/jonat/DSA_project2/build_tests/sort_comparator_tests.exe" "DataLoader helpers behave as expected"
+Directory: C:/Users/jonat/DSA_project2/build_tests
+"DataLoader helpers behave as expected" start time: Mar 28 16:26 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Filters: "DataLoader helpers behave as expected"
+Randomness seeded to: 1949100608
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DataLoader helpers behave as expected" end time: Mar 28 16:26 Eastern Daylight Time
+"DataLoader helpers behave as expected" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 28 16:26 Eastern Daylight Time

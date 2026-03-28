@@ -48,7 +48,7 @@ static void printMainMenu() {
 
 // Collect the user's dataset choice, and print a short preview.
 static std::vector<int> loadDataMenu() {
-    std::cout << "\n--- Load Data ---\n";
+    std::cout << "\n Load Data \n";
     std::cout << "  [1] Random data\n";
     std::cout << "  [2] Nearly sorted data\n";
     std::cout << "  [3] Reverse sorted data\n";
@@ -58,21 +58,21 @@ static std::vector<int> loadDataMenu() {
     std::vector<int> dataset;
 
     if (choice == 1) {
-        int size = readInt("  Enter dataset size (100000 - 1000000): ", 100000, 1000000);
+        int size = readInt("  Enter dataset size (100 - 1000000): ", 100, 1000000);
         std::cout << "  Generating random dataset...\n";
         dataset = DataLoader::generateRandom(size);
         std::cout << "  Done.\n";
         DataLoader::printSummary(dataset);
 
     } else if (choice == 2) {
-        int size = readInt("  Enter dataset size (100000 - 1000000): ", 100000, 1000000);
+        int size = readInt("  Enter dataset size (100 - 1000000): ", 100, 1000000);
         std::cout << "  Generating nearly-sorted dataset (5% swapped)...\n";
         dataset = DataLoader::generateNearlySorted(size, 0.05);
         std::cout << "  Done.\n";
         DataLoader::printSummary(dataset);
 
     } else if (choice == 3) {
-        int size = readInt("  Enter dataset size (100000 - 1000000): ", 100000, 1000000);
+        int size = readInt("  Enter dataset size (100 - 1000000): ", 100, 1000000);
         std::cout << "  Generating reverse-sorted dataset...\n";
         dataset = DataLoader::generateReverseSorted(size);
         std::cout << "  Done.\n";
@@ -84,7 +84,7 @@ static std::vector<int> loadDataMenu() {
         std::string filepath;
         std::getline(std::cin, filepath);
 
-        int maxRows = readInt("  Max rows to load (100000 - 1000000): ", 100000, 1000000);
+        int maxRows = readInt("  Max rows to load (100 - 1000000): ", 100, 1000000);
         dataset = DataLoader::loadFromCSV(filepath, maxRows);
 
         if (dataset.empty()) {

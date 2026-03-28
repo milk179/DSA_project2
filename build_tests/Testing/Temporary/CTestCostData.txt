@@ -1,0 +1,5 @@
+sort_comparator_tests_NOT_BUILT-b12d07c 0 0
+Sorters handle edge cases 1 0.0114521
+Comparator reports metadata and correctness 1 0.0142554
+DataLoader helpers behave as expected 1 0.0114472
+---
