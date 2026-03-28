@@ -1,0 +1,3 @@
+C:/Users/jonat/DSA_project2/build_verify/CMakeFiles/CMakeScratch/TryCompile-usgveb/CMakeFiles/cmTC_61a1e.dir
+C:/Users/jonat/DSA_project2/build_verify/CMakeFiles/CMakeScratch/TryCompile-usgveb/CMakeFiles/edit_cache.dir
+C:/Users/jonat/DSA_project2/build_verify/CMakeFiles/CMakeScratch/TryCompile-usgveb/CMakeFiles/rebuild_cache.dir

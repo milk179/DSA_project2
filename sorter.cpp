@@ -24,7 +24,10 @@ std::vector<int> sorter::mergesort() {
 
     auto start = std::chrono::high_resolution_clock::now();
 
-    std::vector<int> result = mergesortReal(dataset, 0, dataset.size() - 1);
+    std::vector<int> result;
+    if (!dataset.empty()) {
+        result = mergesortReal(dataset, 0, static_cast<int>(dataset.size()) - 1);
+    }
 
     auto end = std::chrono::high_resolution_clock::now();
 
@@ -46,8 +49,8 @@ void sorter::quicksortReal(std::vector<int>& dataset, int left, int right) {
     int i = left, j = right - 1;
 
     while (i <= j) {
-        while (!(dataset[j] <= dataset[pivot])) j--;
-        while (!(dataset[i] > dataset[pivot])) i++;
+        while (j >= left && !(dataset[j] <= dataset[pivot])) j--;
+        while (i <= right && !(dataset[i] > dataset[pivot])) i++;
 
         if (i > j) break;
 
