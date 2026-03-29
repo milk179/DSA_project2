@@ -34,10 +34,8 @@ ComparisonResult Comparator::run(const std::vector<int>& dataset, const std::str
 void Comparator::printResult(const ComparisonResult& result) {
     // Print the timing and correctness details for one dataset comparison.
     std::cout << "\n";
-    std::cout << "======================================================\n";
     std::cout << "  Dataset : " << result.datasetLabel << "\n";
     std::cout << "  Size    : " << result.datasetSize << " elements\n";
-    std::cout << "------------------------------------------------------\n";
 
     std::cout << "  Quicksort  | Time: " << std::setw(10) << result.quicksortMicros
               << " us | Correct: " << (result.quicksortCorrect ? "YES" : "NO ") << "\n";
@@ -45,7 +43,6 @@ void Comparator::printResult(const ComparisonResult& result) {
     std::cout << "  Mergesort  | Time: " << std::setw(10) << result.mergesortMicros
               << " us | Correct: " << (result.mergesortCorrect ? "YES" : "NO ") << "\n";
 
-    std::cout << "------------------------------------------------------\n";
 
     // Pick the winner by correctness first, then by runtime when both are valid.
     if (result.quicksortCorrect && result.mergesortCorrect) {
@@ -70,11 +67,11 @@ void Comparator::printResult(const ComparisonResult& result) {
         std::cout << "  Both algorithms produced incorrect results.\n";
     }
 
-    std::cout << "======================================================\n";
 }
 
 void Comparator::printTable(const std::vector<ComparisonResult>& results) {
     if (results.empty()) return;
+    bool hasCorrectnessIssue = false;
 
     // Print a full table so every dataset can be compared side by side.
     std::cout << "\n";
@@ -94,10 +91,13 @@ void Comparator::printTable(const std::vector<ComparisonResult>& results) {
             else if (r.mergesortMicros < r.quicksortMicros) winner = "Mergesort";
         } else if (!r.quicksortCorrect && r.mergesortCorrect) {
             winner = "Mergesort*";
+            hasCorrectnessIssue = true;
         } else if (r.quicksortCorrect && !r.mergesortCorrect) {
             winner = "Quicksort*";
+            hasCorrectnessIssue = true;
         } else {
             winner = "N/A";
+            hasCorrectnessIssue = true;
         }
 
         std::string label = r.datasetLabel;
@@ -111,5 +111,7 @@ void Comparator::printTable(const std::vector<ComparisonResult>& results) {
                   << winner << "\n";
     }
 
-    std::cout << "  * Correctness issue detected for that algorithm.\n";
+    if (hasCorrectnessIssue) {
+        std::cout << "  * Correctness issue detected for that algorithm.\n";
+    }
 }
